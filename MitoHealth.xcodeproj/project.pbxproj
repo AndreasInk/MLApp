@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1908BFD26BA195F005A9C6D /* MitoHealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908BFC26BA195F005A9C6D /* MitoHealthApp.swift */; };
+		E1908BFF26BA195F005A9C6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908BFE26BA195F005A9C6D /* ContentView.swift */; };
+		E1908C0126BA1960005A9C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1908C0026BA1960005A9C6D /* Assets.xcassets */; };
+		E1908C0426BA1960005A9C6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1908C0326BA1960005A9C6D /* Preview Assets.xcassets */; };
+		E1908C0B26BA1970005A9C6D /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C0A26BA1970005A9C6D /* TrainingView.swift */; };
+		E1908C0D26BA199B005A9C6D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C0C26BA199B005A9C6D /* Data.swift */; };
+		E1908C0F26BA44A0005A9C6D /* HalfCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C0E26BA44A0005A9C6D /* HalfCircleView.swift */; };
+		E1908C1126BA4D30005A9C6D /* JournalInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C1026BA4D30005A9C6D /* JournalInput.swift */; };
+		E1908C2926BA555B005A9C6D /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C1526BA555B005A9C6D /* BarChartView.swift */; };
+		E1908C2A26BA555B005A9C6D /* BarChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C1626BA555B005A9C6D /* BarChartRow.swift */; };
+		E1908C2B26BA555B005A9C6D /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C1726BA555B005A9C6D /* LabelView.swift */; };
+		E1908C2C26BA555B005A9C6D /* BarChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C1826BA555B005A9C6D /* BarChartCell.swift */; };
+		E1908C2D26BA555B005A9C6D /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C1926BA555B005A9C6D /* ChartView.swift */; };
+		E1908C2E26BA555B005A9C6D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C1A26BA555B005A9C6D /* Helpers.swift */; };
+		E1908C2F26BA555B005A9C6D /* PieChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C1C26BA555B005A9C6D /* PieChartRow.swift */; };
+		E1908C3026BA555B005A9C6D /* PieChartHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C1D26BA555B005A9C6D /* PieChartHelpers.swift */; };
+		E1908C3126BA555B005A9C6D /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C1E26BA555B005A9C6D /* PieChartCell.swift */; };
+		E1908C3226BA555B005A9C6D /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C1F26BA555B005A9C6D /* PieChartView.swift */; };
+		E1908C3326BA555B005A9C6D /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C2126BA555B005A9C6D /* IndicatorPoint.swift */; };
+		E1908C3426BA555B005A9C6D /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C2226BA555B005A9C6D /* LineView.swift */; };
+		E1908C3526BA555B005A9C6D /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C2326BA555B005A9C6D /* Legend.swift */; };
+		E1908C3626BA555B005A9C6D /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C2426BA555B005A9C6D /* LineChartView.swift */; };
+		E1908C3726BA555B005A9C6D /* MagnifierRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C2526BA555B005A9C6D /* MagnifierRect.swift */; };
+		E1908C3826BA555B005A9C6D /* Path+QuadCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C2626BA555B005A9C6D /* Path+QuadCurve.swift */; };
+		E1908C3926BA555B005A9C6D /* MultiLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C2726BA555B005A9C6D /* MultiLineChartView.swift */; };
+		E1908C3A26BA555B005A9C6D /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1908C2826BA555B005A9C6D /* Line.swift */; };
+		E1A2C49826BBC3A4004E5C3B /* SFSafeSymbols-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E1A2C49726BBC3A4004E5C3B /* SFSafeSymbols-Dynamic */; };
+		E1A2C49926BBC3D0004E5C3B /* SFSafeSymbols-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = E1A2C49726BBC3A4004E5C3B /* SFSafeSymbols-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1C89A1B26BC3F2C0069DDC1 /* CollectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C89A1A26BC3F2C0069DDC1 /* CollectListView.swift */; };
+		E1C89A1D26BC44260069DDC1 /* CollectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C89A1C26BC44260069DDC1 /* CollectDetailView.swift */; };
+		E1C89A1F26BC45030069DDC1 /* CollectEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C89A1E26BC45030069DDC1 /* CollectEditView.swift */; };
+		E1CF0D7A26BAE9CA005CCEFB /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CF0D7926BAE9CA005CCEFB /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1A2C49426BBC379004E5C3B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E1A2C49926BBC3D0004E5C3B /* SFSafeSymbols-Dynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E1908BF926BA195F005A9C6D /* MitoHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MitoHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1908BFC26BA195F005A9C6D /* MitoHealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitoHealthApp.swift; sourceTree = "<group>"; };
+		E1908BFE26BA195F005A9C6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1908C0026BA1960005A9C6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1908C0326BA1960005A9C6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1908C0A26BA1970005A9C6D /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		E1908C0C26BA199B005A9C6D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		E1908C0E26BA44A0005A9C6D /* HalfCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfCircleView.swift; sourceTree = "<group>"; };
+		E1908C1026BA4D30005A9C6D /* JournalInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalInput.swift; sourceTree = "<group>"; };
+		E1908C1526BA555B005A9C6D /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		E1908C1626BA555B005A9C6D /* BarChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartRow.swift; sourceTree = "<group>"; };
+		E1908C1726BA555B005A9C6D /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		E1908C1826BA555B005A9C6D /* BarChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartCell.swift; sourceTree = "<group>"; };
+		E1908C1926BA555B005A9C6D /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		E1908C1A26BA555B005A9C6D /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		E1908C1C26BA555B005A9C6D /* PieChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartRow.swift; sourceTree = "<group>"; };
+		E1908C1D26BA555B005A9C6D /* PieChartHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartHelpers.swift; sourceTree = "<group>"; };
+		E1908C1E26BA555B005A9C6D /* PieChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
+		E1908C1F26BA555B005A9C6D /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		E1908C2126BA555B005A9C6D /* IndicatorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
+		E1908C2226BA555B005A9C6D /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		E1908C2326BA555B005A9C6D /* Legend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
+		E1908C2426BA555B005A9C6D /* LineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		E1908C2526BA555B005A9C6D /* MagnifierRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagnifierRect.swift; sourceTree = "<group>"; };
+		E1908C2626BA555B005A9C6D /* Path+QuadCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+QuadCurve.swift"; sourceTree = "<group>"; };
+		E1908C2726BA555B005A9C6D /* MultiLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLineChartView.swift; sourceTree = "<group>"; };
+		E1908C2826BA555B005A9C6D /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		E1C89A1A26BC3F2C0069DDC1 /* CollectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListView.swift; sourceTree = "<group>"; };
+		E1C89A1C26BC44260069DDC1 /* CollectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectDetailView.swift; sourceTree = "<group>"; };
+		E1C89A1E26BC45030069DDC1 /* CollectEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectEditView.swift; sourceTree = "<group>"; };
+		E1CF0D7526BAE9AF005CCEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E1CF0D7626BAE9CA005CCEFB /* MitoHealth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MitoHealth.entitlements; sourceTree = "<group>"; };
+		E1CF0D7726BAE9CA005CCEFB /* MitoHealth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MitoHealth.entitlements; sourceTree = "<group>"; };
+		E1CF0D7926BAE9CA005CCEFB /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1908BF626BA195F005A9C6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A2C49826BBC3A4004E5C3B /* SFSafeSymbols-Dynamic in Frameworks */,
+				E1CF0D7A26BAE9CA005CCEFB /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1908BF026BA195E005A9C6D = {
+			isa = PBXGroup;
+			children = (
+				E1908BFB26BA195F005A9C6D /* MitoHealth */,
+				E1908BFA26BA195F005A9C6D /* Products */,
+				E1CF0D7826BAE9CA005CCEFB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1908BFA26BA195F005A9C6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1908BF926BA195F005A9C6D /* MitoHealth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1908BFB26BA195F005A9C6D /* MitoHealth */ = {
+			isa = PBXGroup;
+			children = (
+				E1CF0D7726BAE9CA005CCEFB /* MitoHealth.entitlements */,
+				E1CF0D7626BAE9CA005CCEFB /* MitoHealth.entitlements */,
+				E1CF0D7526BAE9AF005CCEFB /* Info.plist */,
+				E1908BFC26BA195F005A9C6D /* MitoHealthApp.swift */,
+				E1908BFE26BA195F005A9C6D /* ContentView.swift */,
+				E1C89A1A26BC3F2C0069DDC1 /* CollectListView.swift */,
+				E1C89A1C26BC44260069DDC1 /* CollectDetailView.swift */,
+				E1C89A1E26BC45030069DDC1 /* CollectEditView.swift */,
+				E1908C0A26BA1970005A9C6D /* TrainingView.swift */,
+				E1908C1026BA4D30005A9C6D /* JournalInput.swift */,
+				E1908C0C26BA199B005A9C6D /* Data.swift */,
+				E1908C0E26BA44A0005A9C6D /* HalfCircleView.swift */,
+				E1908C1326BA555B005A9C6D /* SwiftUICharts */,
+				E1908C0026BA1960005A9C6D /* Assets.xcassets */,
+				E1908C0226BA1960005A9C6D /* Preview Content */,
+			);
+			path = MitoHealth;
+			sourceTree = "<group>";
+		};
+		E1908C0226BA1960005A9C6D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E1908C0326BA1960005A9C6D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E1908C1326BA555B005A9C6D /* SwiftUICharts */ = {
+			isa = PBXGroup;
+			children = (
+				E1908C1426BA555B005A9C6D /* BarChart */,
+				E1908C1926BA555B005A9C6D /* ChartView.swift */,
+				E1908C1A26BA555B005A9C6D /* Helpers.swift */,
+				E1908C1B26BA555B005A9C6D /* PieChart */,
+				E1908C2026BA555B005A9C6D /* LineChart */,
+			);
+			path = SwiftUICharts;
+			sourceTree = "<group>";
+		};
+		E1908C1426BA555B005A9C6D /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				E1908C1526BA555B005A9C6D /* BarChartView.swift */,
+				E1908C1626BA555B005A9C6D /* BarChartRow.swift */,
+				E1908C1726BA555B005A9C6D /* LabelView.swift */,
+				E1908C1826BA555B005A9C6D /* BarChartCell.swift */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		E1908C1B26BA555B005A9C6D /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				E1908C1C26BA555B005A9C6D /* PieChartRow.swift */,
+				E1908C1D26BA555B005A9C6D /* PieChartHelpers.swift */,
+				E1908C1E26BA555B005A9C6D /* PieChartCell.swift */,
+				E1908C1F26BA555B005A9C6D /* PieChartView.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
+		E1908C2026BA555B005A9C6D /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				E1908C2126BA555B005A9C6D /* IndicatorPoint.swift */,
+				E1908C2226BA555B005A9C6D /* LineView.swift */,
+				E1908C2326BA555B005A9C6D /* Legend.swift */,
+				E1908C2426BA555B005A9C6D /* LineChartView.swift */,
+				E1908C2526BA555B005A9C6D /* MagnifierRect.swift */,
+				E1908C2626BA555B005A9C6D /* Path+QuadCurve.swift */,
+				E1908C2726BA555B005A9C6D /* MultiLineChartView.swift */,
+				E1908C2826BA555B005A9C6D /* Line.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+		E1CF0D7826BAE9CA005CCEFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1CF0D7926BAE9CA005CCEFB /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1908BF826BA195F005A9C6D /* MitoHealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1908C0726BA1960005A9C6D /* Build configuration list for PBXNativeTarget "MitoHealth" */;
+			buildPhases = (
+				E1908BF526BA195F005A9C6D /* Sources */,
+				E1908BF626BA195F005A9C6D /* Frameworks */,
+				E1908BF726BA195F005A9C6D /* Resources */,
+				E1A2C49426BBC379004E5C3B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MitoHealth;
+			packageProductDependencies = (
+				E1A2C49726BBC3A4004E5C3B /* SFSafeSymbols-Dynamic */,
+			);
+			productName = MitoHealth;
+			productReference = E1908BF926BA195F005A9C6D /* MitoHealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1908BF126BA195E005A9C6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					E1908BF826BA195F005A9C6D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = E1908BF426BA195E005A9C6D /* Build configuration list for PBXProject "MitoHealth" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1908BF026BA195E005A9C6D;
+			packageReferences = (
+				E1A2C49626BBC3A4004E5C3B /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+			);
+			productRefGroup = E1908BFA26BA195F005A9C6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1908BF826BA195F005A9C6D /* MitoHealth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1908BF726BA195F005A9C6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1908C0426BA1960005A9C6D /* Preview Assets.xcassets in Resources */,
+				E1908C0126BA1960005A9C6D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1908BF526BA195F005A9C6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1908C1126BA4D30005A9C6D /* JournalInput.swift in Sources */,
+				E1908C0B26BA1970005A9C6D /* TrainingView.swift in Sources */,
+				E1908C2B26BA555B005A9C6D /* LabelView.swift in Sources */,
+				E1908C3926BA555B005A9C6D /* MultiLineChartView.swift in Sources */,
+				E1908BFF26BA195F005A9C6D /* ContentView.swift in Sources */,
+				E1C89A1F26BC45030069DDC1 /* CollectEditView.swift in Sources */,
+				E1908C3326BA555B005A9C6D /* IndicatorPoint.swift in Sources */,
+				E1908C2A26BA555B005A9C6D /* BarChartRow.swift in Sources */,
+				E1908C3526BA555B005A9C6D /* Legend.swift in Sources */,
+				E1908C3126BA555B005A9C6D /* PieChartCell.swift in Sources */,
+				E1908C3026BA555B005A9C6D /* PieChartHelpers.swift in Sources */,
+				E1908C3726BA555B005A9C6D /* MagnifierRect.swift in Sources */,
+				E1908BFD26BA195F005A9C6D /* MitoHealthApp.swift in Sources */,
+				E1908C3226BA555B005A9C6D /* PieChartView.swift in Sources */,
+				E1908C3626BA555B005A9C6D /* LineChartView.swift in Sources */,
+				E1908C3826BA555B005A9C6D /* Path+QuadCurve.swift in Sources */,
+				E1908C2C26BA555B005A9C6D /* BarChartCell.swift in Sources */,
+				E1908C2F26BA555B005A9C6D /* PieChartRow.swift in Sources */,
+				E1908C2E26BA555B005A9C6D /* Helpers.swift in Sources */,
+				E1908C2D26BA555B005A9C6D /* ChartView.swift in Sources */,
+				E1908C3426BA555B005A9C6D /* LineView.swift in Sources */,
+				E1C89A1D26BC44260069DDC1 /* CollectDetailView.swift in Sources */,
+				E1908C2926BA555B005A9C6D /* BarChartView.swift in Sources */,
+				E1C89A1B26BC3F2C0069DDC1 /* CollectListView.swift in Sources */,
+				E1908C3A26BA555B005A9C6D /* Line.swift in Sources */,
+				E1908C0D26BA199B005A9C6D /* Data.swift in Sources */,
+				E1908C0F26BA44A0005A9C6D /* HalfCircleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E1908C0526BA1960005A9C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1908C0626BA1960005A9C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1908C0826BA1960005A9C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MitoHealth/MitoHealth.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MitoHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = 9NG3C5HP77;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MitoHealth/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.MitoHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1908C0926BA1960005A9C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MitoHealth/MitoHealth.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MitoHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = 9NG3C5HP77;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MitoHealth/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.MitoHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1908BF426BA195E005A9C6D /* Build configuration list for PBXProject "MitoHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1908C0526BA1960005A9C6D /* Debug */,
+				E1908C0626BA1960005A9C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1908C0726BA1960005A9C6D /* Build configuration list for PBXNativeTarget "MitoHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1908C0826BA1960005A9C6D /* Debug */,
+				E1908C0926BA1960005A9C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1A2C49626BBC3A4004E5C3B /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/piknotech/SFSafeSymbols.git";
+			requirement = {
+				branch = stable;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1A2C49726BBC3A4004E5C3B /* SFSafeSymbols-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A2C49626BBC3A4004E5C3B /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = "SFSafeSymbols-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E1908BF126BA195E005A9C6D /* Project object */;
+}
